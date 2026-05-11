@@ -8,44 +8,50 @@
     <link rel="icon" type="image/x-icon" href="assets/logo.png">
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="assets/logo.png" alt="VENTIDUE" class="logo" />
-                    <h1>VENTIDUE</h1>
-                </div>
-                <nav class="nav">
-                    <a href="#menu" data-en="Menu" data-it="Menu" class="nav-link">Menu</a>
-                    <a href="#info" data-en="Info" data-it="Info" class="nav-link">Info</a>
-                    <a href="#contact" data-en="Contact" data-it="Contatti" class="nav-link">Contact</a>
-                </nav>
-                <div class="language-selector">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="it">IT</button>
-                </div>
+    <!-- NAVIGATION BAR -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo-link">
+                    <img src="assets/logo.png" alt="VENTIDUE" class="nav-logo" />
+                    <span class="bar-name">VENTIDUE</span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <a href="#menu" class="nav-link" data-en="Menu" data-it="Menu">Menu</a>
+                <a href="#about" class="nav-link" data-en="About" data-it="Chi Siamo">About</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-it="Contatti">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="it">IT</button>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
-            <img src="assets/logo.png" alt="VENTIDUE" class="hero-logo" />
-            <h2 data-en="Experience Excellence" data-it="Vivi l'Eccellenza">Experience Excellence</h2>
-            <p data-en="Premium Cocktails in Tortona" data-it="Cocktail Premium a Tortona">Premium Cocktails in Tortona</p>
+            <div class="hero-logo-wrapper">
+                <img src="assets/logo.png" alt="VENTIDUE" class="hero-logo" />
+            </div>
+            <h1 data-en="VENTIDUE" data-it="VENTIDUE">VENTIDUE</h1>
+            <p data-en="Premium Cocktails Experience" data-it="Esperienza di Cocktail Premium">Premium Cocktails Experience</p>
+            <a href="#menu" class="cta-button" data-en="Explore Our Menu" data-it="Scopri il Nostro Menu">Explore Our Menu</a>
         </div>
     </section>
 
     <!-- MENU SECTION -->
-    <section id="menu" class="menu">
+    <section id="menu" class="menu-section">
         <div class="container">
-            <h2 data-en="Our Menu" data-it="Il Nostro Menu">Our Menu</h2>
-            
+            <div class="section-header">
+                <h2 data-en="Our Selection" data-it="La Nostra Selezione">Our Selection</h2>
+                <p data-en="Curated cocktails at €6.00 each" data-it="Cocktail selezionati a €6,00 l'uno">Curated cocktails at €6.00 each</p>
+            </div>
+
             <div class="menu-tabs">
-                <button class="menu-tab active" data-category="classics" data-en="IBA Classics" data-it="Classici IBA">IBA Classics</button>
-                <button class="menu-tab" data-category="popular" data-en="Popular" data-it="Popolari">Popular</button>
+                <button class="menu-btn active" data-category="classics" data-en="IBA Classics" data-it="Classici IBA">IBA Classics</button>
+                <button class="menu-btn" data-category="popular" data-en="Popular Picks" data-it="Scelte Popolari">Popular Picks</button>
             </div>
 
             <div class="menu-category active" data-category="classics">
@@ -57,68 +63,85 @@
         </div>
     </section>
 
-    <!-- INFO SECTION -->
-    <section id="info" class="info">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
         <div class="container">
-            <h2 data-en="About" data-it="Chi Siamo">About</h2>
-            <div class="info-grid">
-                <div class="info-card">
+            <div class="section-header">
+                <h2 data-en="About VENTIDUE" data-it="Su VENTIDUE">About VENTIDUE</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
                     <h3 data-en="Hours" data-it="Orari">Hours</h3>
-                    <p>
-                        <strong data-en="Monday - Tuesday" data-it="Lunedì - Martedì">Monday - Tuesday</strong><br>
-                        <span data-en="8:00 AM - 2:00 PM" data-it="8:00 - 14:00">8:00 AM - 2:00 PM</span><br>
-                        <span data-en="5:00 PM - 2:00 AM" data-it="17:00 - 2:00">5:00 PM - 2:00 AM</span>
-                    </p>
-                    <p>
-                        <strong data-en="Wednesday" data-it="Mercoledì">Wednesday</strong><br>
-                        <span data-en="CLOSED" data-it="CHIUSO">CLOSED</span>
-                    </p>
-                    <p>
-                        <strong data-en="Thursday - Sunday" data-it="Giovedì - Domenica">Thursday - Sunday</strong><br>
-                        <span data-en="8:00 AM - 2:00 PM" data-it="8:00 - 14:00">8:00 AM - 2:00 PM</span><br>
-                        <span data-en="5:00 PM - 2:00 AM" data-it="17:00 - 2:00">5:00 PM - 2:00 AM</span>
-                    </p>
+                    <div class="about-content">
+                        <p>
+                            <strong data-en="Monday - Tuesday" data-it="Lunedì - Martedì">Monday - Tuesday</strong><br>
+                            <span data-en="8:00 AM - 2:00 PM" data-it="8:00 - 14:00">8:00 AM - 2:00 PM</span><br>
+                            <span data-en="5:00 PM - 2:00 AM" data-it="17:00 - 2:00">5:00 PM - 2:00 AM</span>
+                        </p>
+                        <p>
+                            <strong data-en="Wednesday" data-it="Mercoledì">Wednesday</strong><br>
+                            <span data-en="CLOSED" data-it="CHIUSO">CLOSED</span>
+                        </p>
+                        <p>
+                            <strong data-en="Thursday - Sunday" data-it="Giovedì - Domenica">Thursday - Sunday</strong><br>
+                            <span data-en="8:00 AM - 2:00 PM" data-it="8:00 - 14:00">8:00 AM - 2:00 PM</span><br>
+                            <span data-en="5:00 PM - 2:00 AM" data-it="17:00 - 2:00">5:00 PM - 2:00 AM</span>
+                        </p>
+                    </div>
                 </div>
-                <div class="info-card">
+
+                <div class="about-card">
                     <h3 data-en="Location" data-it="Posizione">Location</h3>
-                    <p>
-                        <strong>VENTIDUE BAR</strong><br>
-                        Via Giosuè Carducci, 12<br>
-                        15057 Tortona AL<br>
-                        Italy
-                    </p>
-                    <a href="https://maps.google.com/?q=Via+Giosuè+Carducci,+12,+15057+Tortona+AL,+Italy" target="_blank" class="btn-map" data-en="View on Maps" data-it="Vedi su Mappe">View on Maps</a>
+                    <div class="about-content">
+                        <p>
+                            <strong>VENTIDUE BAR</strong><br>
+                            Via Giosuè Carducci, 12<br>
+                            15057 Tortona AL<br>
+                            Italy
+                        </p>
+                        <a href="https://maps.google.com/?q=Via+Giosuè+Carducci,+12,+15057+Tortona+AL,+Italy" target="_blank" class="location-link" data-en="View on Maps" data-it="Vedi su Mappe">View on Maps →</a>
+                    </div>
                 </div>
-                <div class="info-card">
-                    <h3 data-en="All Drinks" data-it="Tutti i Drink">All Drinks</h3>
-                    <p data-en="€6.00 each" data-it="€6,00 ciascuno">€6.00 each</p>
-                    <p data-en="Premium ingredients" data-it="Ingredienti premium">Premium ingredients</p>
-                    <p data-en="Authentic recipes" data-it="Ricette autentiche">Authentic recipes</p>
+
+                <div class="about-card">
+                    <h3 data-en="Our Bar" data-it="Il Nostro Bar">Our Bar</h3>
+                    <div class="about-content">
+                        <p data-en="Experience premium cocktails crafted with authentic recipes and the finest ingredients." data-it="Vivi cocktail premium realizzati con ricette autentiche e i migliori ingredienti.">Experience premium cocktails crafted with authentic recipes and the finest ingredients.</p>
+                        <p data-en="Every drink served with passion and precision in the heart of Tortona." data-it="Ogni drink servito con passione e precisione nel cuore di Tortona.">Every drink served with passion and precision in the heart of Tortona.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2 data-en="Contact" data-it="Contatti">Contact</h2>
+            <h2 data-en="Get In Touch" data-it="Contattaci">Get In Touch</h2>
+            <p class="contact-subtitle" data-en="Visit us for an unforgettable experience" data-it="Visitaci per un'esperienza indimenticabile">Visit us for an unforgettable experience</p>
+            
             <div class="contact-info">
-                <p>
-                    <strong data-en="Address:" data-it="Indirizzo:">Address:</strong> Via Giosuè Carducci, 12, 15057 Tortona AL, Italy
-                </p>
-                <p>
-                    <strong data-en="Visit us" data-it="Visitaci" >Visit us</strong> <span data-en="Wednesday is our rest day." data-it="Mercoledì è il nostro giorno di riposo.">Wednesday is our rest day.</span>
-                </p>
+                <div class="contact-item">
+                    <span class="contact-label" data-en="Address" data-it="Indirizzo">Address</span>
+                    <p>Via Giosuè Carducci, 12<br>15057 Tortona AL, Italy</p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label" data-en="Hours Today" data-it="Orari Oggi">Hours Today</span>
+                    <p data-en="Open now 8:00 AM - 2:00 PM" data-it="Aperto ora 8:00 - 14:00">Open now 8:00 AM - 2:00 PM</p>
+                    <p data-en="Evening: 5:00 PM - 2:00 AM" data-it="Sera: 17:00 - 2:00">Evening: 5:00 PM - 2:00 AM</p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label" data-en="All Drinks" data-it="Tutti i Drink">All Drinks</span>
+                    <p data-en="€6.00 each" data-it="€6,00 l'uno">€6.00 each</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 VENTIDUE BAR. <span data-en="All rights reserved." data-it="Tutti i diritti riservati.">All rights reserved.</span></p>
-        </div>
+        <p>&copy; 2026 VENTIDUE BAR. <span data-en="All rights reserved." data-it="Tutti i diritti riservati.">All rights reserved.</span></p>
     </footer>
 
     <script src="js/data.js"></script>
